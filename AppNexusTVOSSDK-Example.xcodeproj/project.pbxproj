@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4D6DD21325334F4E5E774D3 /* Pods_AppNexusTVOSSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */; };
+		FF3FC22A203EC695004140B7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF3FC229203EC695004140B7 /* README.md */; };
+		FFA43647203EB8BD00382C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43646203EB8BD00382C0D /* AppDelegate.swift */; };
+		FFA43649203EB8BD00382C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43648203EB8BD00382C0D /* ViewController.swift */; };
+		FFA4364C203EB8BD00382C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA4364A203EB8BD00382C0D /* Main.storyboard */; };
+		FFA4364E203EB8BD00382C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA4364D203EB8BD00382C0D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FB408C066373AF601D1E786 /* Pods-AppNexusTVOSSDK-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppNexusTVOSSDK-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9B7CA6D9D30897A1238A836D /* Pods-AppNexusTVOSSDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppNexusTVOSSDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppNexusTVOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3FC229203EC695004140B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FFA43643203EB8BD00382C0D /* AppNexusTVOSSDK-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppNexusTVOSSDK-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA43646203EB8BD00382C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFA43648203EB8BD00382C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFA4364B203EB8BD00382C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA4364D203EB8BD00382C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA4364F203EB8BD00382C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA43640203EB8BD00382C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D6DD21325334F4E5E774D3 /* Pods_AppNexusTVOSSDK_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBDB88F200B080C7E597DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FB408C066373AF601D1E786 /* Pods-AppNexusTVOSSDK-Example.debug.xcconfig */,
+				9B7CA6D9D30897A1238A836D /* Pods-AppNexusTVOSSDK-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9832D485BE9BDB691AAF06B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA4363A203EB8BD00382C0D = {
+			isa = PBXGroup;
+			children = (
+				FF3FC229203EC695004140B7 /* README.md */,
+				FFA43645203EB8BD00382C0D /* AppNexusTVOSSDK-Example */,
+				FFA43644203EB8BD00382C0D /* Products */,
+				0BBDB88F200B080C7E597DB8 /* Pods */,
+				9832D485BE9BDB691AAF06B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA43644203EB8BD00382C0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA43643203EB8BD00382C0D /* AppNexusTVOSSDK-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA43645203EB8BD00382C0D /* AppNexusTVOSSDK-Example */ = {
+			isa = PBXGroup;
+			children = (
+				FFA43646203EB8BD00382C0D /* AppDelegate.swift */,
+				FFA43648203EB8BD00382C0D /* ViewController.swift */,
+				FFA4364A203EB8BD00382C0D /* Main.storyboard */,
+				FFA4364D203EB8BD00382C0D /* Assets.xcassets */,
+				FFA4364F203EB8BD00382C0D /* Info.plist */,
+			);
+			path = "AppNexusTVOSSDK-Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA43642203EB8BD00382C0D /* AppNexusTVOSSDK-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA43652203EB8BD00382C0D /* Build configuration list for PBXNativeTarget "AppNexusTVOSSDK-Example" */;
+			buildPhases = (
+				ECBE6F7DA209C58A1045128C /* [CP] Check Pods Manifest.lock */,
+				FFA4363F203EB8BD00382C0D /* Sources */,
+				FFA43640203EB8BD00382C0D /* Frameworks */,
+				FFA43641203EB8BD00382C0D /* Resources */,
+				7505ED92B7F27A87A109E855 /* [CP] Embed Pods Frameworks */,
+				F2E200543253DF2582211A79 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppNexusTVOSSDK-Example";
+			productName = "AppNexusTVOSSDK-Example";
+			productReference = FFA43643203EB8BD00382C0D /* AppNexusTVOSSDK-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA4363B203EB8BD00382C0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "David Cordero";
+				TargetAttributes = {
+					FFA43642203EB8BD00382C0D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFA4363E203EB8BD00382C0D /* Build configuration list for PBXProject "AppNexusTVOSSDK-Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA4363A203EB8BD00382C0D;
+			productRefGroup = FFA43644203EB8BD00382C0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA43642203EB8BD00382C0D /* AppNexusTVOSSDK-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA43641203EB8BD00382C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3FC22A203EC695004140B7 /* README.md in Resources */,
+				FFA4364E203EB8BD00382C0D /* Assets.xcassets in Resources */,
+				FFA4364C203EB8BD00382C0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7505ED92B7F27A87A109E855 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example-frameworks.sh",
+				"${PODS_ROOT}/AppNexusTVOSSDK/ANTVSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ANTVSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBE6F7DA209C58A1045128C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppNexusTVOSSDK-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E200543253DF2582211A79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA4363F203EB8BD00382C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA43649203EB8BD00382C0D /* ViewController.swift in Sources */,
+				FFA43647203EB8BD00382C0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFA4364A203EB8BD00382C0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA4364B203EB8BD00382C0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA43650203EB8BD00382C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		FFA43651203EB8BD00382C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA43653203EB8BD00382C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB408C066373AF601D1E786 /* Pods-AppNexusTVOSSDK-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AppNexusTVOSSDK-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dcordero.AppNexusTVOSSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		FFA43654203EB8BD00382C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B7CA6D9D30897A1238A836D /* Pods-AppNexusTVOSSDK-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AppNexusTVOSSDK-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dcordero.AppNexusTVOSSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA4363E203EB8BD00382C0D /* Build configuration list for PBXProject "AppNexusTVOSSDK-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA43650203EB8BD00382C0D /* Debug */,
+				FFA43651203EB8BD00382C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA43652203EB8BD00382C0D /* Build configuration list for PBXNativeTarget "AppNexusTVOSSDK-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA43653203EB8BD00382C0D /* Debug */,
+				FFA43654203EB8BD00382C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA4363B203EB8BD00382C0D /* Project object */;
+}
