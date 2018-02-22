@@ -3,7 +3,7 @@ import AVFoundation
 import UIKit
 import ANTVSDK
 
-private let appNexusPsetId = 12345
+private let appNexusPsetId = 8
 
 class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
 
@@ -41,6 +41,8 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
     
     private func setUpAppNexusSDK() {
         adPlaybackController = VMAPPlaybackController()
+        
+        // This property allows skiping the Ad with a click in touch area of SiriRemote.
         adPlaybackController.isSkippable = true
         
         adPlaybackController.setup(appNexusPsetId: appNexusPsetId,
@@ -48,7 +50,6 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
                                    contentVideoPlayer: playerViewController.player!,
                                    contentUIViewController: self,
                                    delegate: self)
-        
     }
     
     private func setUpStreamToPlay(url: URL) {
