@@ -55,7 +55,7 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
         adPlaybackController = VMAPPlaybackController()
         
         // This property allows skiping the Ad with a click in touch area of SiriRemote.
-        adPlaybackController.isSkippable = true
+        // adPlaybackController.isSkippable = true
         
         adPlaybackController.setup(appNexusPsetId: appNexusPsetId,
                                    contentVideoPlayerViewController: playerViewController,
