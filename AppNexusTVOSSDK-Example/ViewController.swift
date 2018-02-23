@@ -7,15 +7,24 @@ private let appNexusPsetId = 8
 
 class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
 
+    private var playerContainerView: UIView!
+
     private var playerViewController: AVPlayerViewController!
     private var adPlaybackController: VMAPPlaybackController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpView()
         setUpAppNexusSDK()
         
         setUpStreamToPlay(url: URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!)
+        playerViewController.player?.play()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presentDummyModalViewController()
     }
     
     // MARK: - VMAPPlaybackControllerProtocol
@@ -23,20 +32,23 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
     func adPlaybackControllerDidPrepare(result: Bool) {
         if result {
             adPlaybackController?.play()
-        } else {
-            playerViewController.player?.play()
         }
     }
         
     // MARK: - Private
     
     private func setUpView() {
+        playerContainerView = UIView()
+        playerContainerView.frame = view.bounds
+
+        view.addSubview(playerContainerView)
+
         playerViewController = AVPlayerViewController()
-        playerViewController.view.frame = view.bounds
         playerViewController.player = AVPlayer()
         
         addChildViewController(playerViewController)
-        view.addSubview(playerViewController.view)
+        playerViewController.view.frame = view.bounds
+        playerContainerView.addSubview(playerViewController.view)
     }
     
     private func setUpAppNexusSDK() {
@@ -56,5 +68,11 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
         let asset = AVURLAsset(url: url, options: nil)
         let playerItem = AVPlayerItem(asset: asset, automaticallyLoadedAssetKeys: nil)
         playerViewController?.player?.replaceCurrentItem(with: playerItem)
+    }
+    
+    private func presentDummyModalViewController() {
+        let modalViewController = ModalViewController()
+        modalViewController.modalPresentationStyle = .blurOverFullScreen
+        present(modalViewController, animated: true, completion: nil)
     }
 }

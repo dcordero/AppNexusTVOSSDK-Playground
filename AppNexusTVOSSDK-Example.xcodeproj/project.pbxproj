@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B4D6DD21325334F4E5E774D3 /* Pods_AppNexusTVOSSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */; };
 		FF3FC22A203EC695004140B7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF3FC229203EC695004140B7 /* README.md */; };
+		FF93E564204014650076A6D1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93E563204014650076A6D1 /* ModalViewController.swift */; };
 		FFA43647203EB8BD00382C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43646203EB8BD00382C0D /* AppDelegate.swift */; };
 		FFA43649203EB8BD00382C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43648203EB8BD00382C0D /* ViewController.swift */; };
 		FFA4364C203EB8BD00382C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA4364A203EB8BD00382C0D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		9B7CA6D9D30897A1238A836D /* Pods-AppNexusTVOSSDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppNexusTVOSSDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example.release.xcconfig"; sourceTree = "<group>"; };
 		EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppNexusTVOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3FC229203EC695004140B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FF93E563204014650076A6D1 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		FFA43643203EB8BD00382C0D /* AppNexusTVOSSDK-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppNexusTVOSSDK-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA43646203EB8BD00382C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA43648203EB8BD00382C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				FFA43646203EB8BD00382C0D /* AppDelegate.swift */,
+				FF93E563204014650076A6D1 /* ModalViewController.swift */,
 				FFA43648203EB8BD00382C0D /* ViewController.swift */,
 				FFA4364A203EB8BD00382C0D /* Main.storyboard */,
 				FFA4364D203EB8BD00382C0D /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA43649203EB8BD00382C0D /* ViewController.swift in Sources */,
+				FF93E564204014650076A6D1 /* ModalViewController.swift in Sources */,
 				FFA43647203EB8BD00382C0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
