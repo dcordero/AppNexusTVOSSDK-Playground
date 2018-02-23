@@ -1,0 +1,53 @@
+(lldb) bt
+* thread #11, name = 'ITMLKit', stop reason = EXC_BAD_INSTRUCTION (code=EXC_I386_INVOP, subcode=0x0)
+  * frame #0: 0x0000000100de3749 ANTVSDK`function signature specialization <Arg[0] = Owned To Guaranteed and Exploded, Arg[3] = Dead> of ANTVSDK.VMAPPlaybackController.loadVMAPByCodable(jsonString: Swift.String, durationOfContent: Swift.Double, hasToSortAdBreaksByTimeOffset: Swift.Bool) -> Swift.Optional<ANTVSDK.VMAP> + 2649
+    frame #1: 0x0000000100de37ba ANTVSDK`function signature specialization <Arg[0] = Owned To Guaranteed and Exploded> of ANTVSDK.VMAPPlaybackController.loadAdBreaks(jsonString: Swift.String, durationOfContent: Swift.Double) -> Swift.Optional<(timeToShowAdArray: Swift.Array<Swift.Int>, adPlayerArray: Swift.Dictionary<Swift.Int, Swift.Array<__ObjC.AVPlayer>>)> + 90
+    frame #2: 0x0000000100de8fa1 ANTVSDK`function signature specialization <Arg[0] = Dead, Arg[1] = Owned To Guaranteed and Exploded, Arg[2] = Dead> of ANTVSDK.VMAPPlaybackController.callback(result: Swift.Bool, jsonString: Swift.String, errorUrls: Swift.String) -> () + 193
+    frame #3: 0x0000000100dd632c ANTVSDK`ANTVSDK.VMAPPlaybackController.callback(result: Swift.Bool, jsonString: Swift.String, errorUrls: Swift.String) -> () + 28
+    frame #4: 0x0000000100de9c6d ANTVSDK`partial apply forwarder + 29
+    frame #5: 0x0000000100de9f15 ANTVSDK`partial apply forwarder with unmangled suffix ".27" + 21
+    frame #6: 0x0000000100def0b9 ANTVSDK`closure #2 (Swift.ImplicitlyUnwrappedOptional<Swift.Bool>, Swift.ImplicitlyUnwrappedOptional<Swift.String>, Swift.ImplicitlyUnwrappedOptional<Swift.String>) -> () in ANTVSDK.JavascriptBridge.appController(__ObjC.TVApplicationController, evaluateAppJavaScriptIn: __ObjC.JSContext) -> () + 201
+    frame #7: 0x0000000100defc5d ANTVSDK`partial apply forwarder for closure #2 (Swift.ImplicitlyUnwrappedOptional<Swift.Bool>, Swift.ImplicitlyUnwrappedOptional<Swift.String>, Swift.ImplicitlyUnwrappedOptional<Swift.String>) -> () in ANTVSDK.JavascriptBridge.appController(__ObjC.TVApplicationController, evaluateAppJavaScriptIn: __ObjC.JSContext) -> () + 109
+    frame #8: 0x0000000100defcff ANTVSDK`partial apply forwarder for reabstraction thunk helper from @callee_owned (@unowned Swift.Optional<Swift.Bool>, @owned Swift.Optional<Swift.String>, @owned Swift.Optional<Swift.String>) -> () to @callee_owned (@unowned Swift.Bool, @owned Swift.String, @owned Swift.String) -> () + 111
+    frame #9: 0x0000000100def189 ANTVSDK`reabstraction thunk helper from @callee_owned (@unowned Swift.Bool, @owned Swift.String, @owned Swift.String) -> () to @callee_unowned @convention(block) (@unowned Swift.Bool, @unowned __ObjC.NSString, @unowned __ObjC.NSString) -> () + 121
+    frame #10: 0x0000000104d1db8c CoreFoundation`__invoking___ + 140
+    frame #11: 0x0000000104d1da60 CoreFoundation`-[NSInvocation invoke] + 320
+    frame #12: 0x00000001122b2e88 JavaScriptCore`JSC::ObjCCallbackFunctionImpl::call(JSContext*, OpaqueJSValue*, unsigned long, OpaqueJSValue const* const*, OpaqueJSValue const**) + 376
+    frame #13: 0x00000001122b248c JavaScriptCore`JSC::objCCallbackFunctionCallAsFunction(OpaqueJSContext const*, OpaqueJSValue*, OpaqueJSValue*, unsigned long, OpaqueJSValue const* const*, OpaqueJSValue const**) + 236
+    frame #14: 0x00000001122b29b2 JavaScriptCore`long long JSC::APICallbackFunction::call<JSC::ObjCCallbackFunction>(JSC::ExecState*) + 498
+    frame #15: 0x0000000112270e31 JavaScriptCore`JSC::LLInt::setUpCall(JSC::ExecState*, JSC::Instruction*, JSC::CodeSpecializationKind, JSC::JSValue, JSC::LLIntCallLinkInfo*) + 577
+    frame #16: 0x000000011227a0ad JavaScriptCore`llint_entry + 27269
+    frame #17: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #18: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #19: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #20: 0x000000011227a049 JavaScriptCore`llint_entry + 27169
+    frame #21: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #22: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #23: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #24: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #25: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #26: 0x000000011227a0bb JavaScriptCore`llint_entry + 27283
+    frame #27: 0x0000000112273440 JavaScriptCore`vmEntryToJavaScript + 304
+    frame #28: 0x000000011210445f JavaScriptCore`JSC::JITCode::execute(JSC::VM*, JSC::ProtoCallFrame*) + 127
+    frame #29: 0x00000001120caaf1 JavaScriptCore`JSC::Interpreter::executeCall(JSC::ExecState*, JSC::JSObject*, JSC::CallType, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 433
+    frame #30: 0x0000000111dbb752 JavaScriptCore`JSC::profiledCall(JSC::ExecState*, JSC::ProfilingReason, JSC::JSValue, JSC::CallType, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 178
+    frame #31: 0x00000001121c550d JavaScriptCore`JSObjectCallAsFunction + 461
+    frame #32: 0x00000001122112b0 JavaScriptCore`-[JSValue invokeMethod:withArguments:] + 464
+    frame #33: 0x0000000114e83238 ITMLKit`-[IKJSObject invokeMethod:withArguments:] + 224
+    frame #34: 0x0000000114ee1c6e ITMLKit`__43-[IKJSXMLHTTPRequest setRequestReadyState:]_block_invoke + 276
+    frame #35: 0x0000000114e6b871 ITMLKit`-[IKAppContext _doEvaluate:] + 422
+    frame #36: 0x0000000114e6b316 ITMLKit`-[IKAppContext _evaluate:] + 135
+    frame #37: 0x0000000114e67223 ITMLKit`__41-[IKAppContext evaluate:completionBlock:]_block_invoke + 42
+    frame #38: 0x0000000114e6aff7 ITMLKit`-[IKAppContext _sourcePerform] + 276
+    frame #39: 0x0000000114e6aea8 ITMLKit`IKRunLoopSourcePerformCallBack + 34
+    frame #40: 0x0000000104d3c921 CoreFoundation`__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+    frame #41: 0x0000000104ddc3b1 CoreFoundation`__CFRunLoopDoSource0 + 81
+    frame #42: 0x0000000104d21239 CoreFoundation`__CFRunLoopDoSources0 + 185
+    frame #43: 0x0000000104d2081f CoreFoundation`__CFRunLoopRun + 1279
+    frame #44: 0x0000000104d200a9 CoreFoundation`CFRunLoopRunSpecific + 409
+    frame #45: 0x0000000114e6ad07 ITMLKit`-[IKAppContext _jsThreadMain] + 376
+    frame #46: 0x0000000100ea805c Foundation`__NSThread__start__ + 1197
+    frame #47: 0x00000001075646c1 libsystem_pthread.dylib`_pthread_body + 340
+    frame #48: 0x000000010756456d libsystem_pthread.dylib`_pthread_start + 377
+    frame #49: 0x0000000107563c5d libsystem_pthread.dylib`thread_start + 13
+(lldb) 
