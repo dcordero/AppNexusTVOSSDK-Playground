@@ -16,5 +16,5 @@ This repo contains the result of testing the usage of the framework AppNexusTVOS
 
 ### Crashes:
 1. When the playing stream finishes the framework crashes. [Crash logs](crash1.log)
-2. Random crash on play. [Crash logs](crash2.log)
+2. Random crash when playing live streams. [Crash logs](crash2.log)
 
