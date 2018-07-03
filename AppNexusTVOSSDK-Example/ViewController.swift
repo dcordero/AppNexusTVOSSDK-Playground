@@ -19,7 +19,6 @@ class ViewController: UIViewController, AdControllerProtocol {
         setUpAppNexusSDK()
         
         setUpStreamToPlay(url: URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!)
-        playerViewController.player?.play()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,7 +38,7 @@ class ViewController: UIViewController, AdControllerProtocol {
     }
 
     func adPlaybackControllerDidRaiseAnError(adSlot: AdSlot?, result: ANTVErrorProtocol?) {
-
+        playerViewController?.player?.play()
     }
 
     func adPlaybackControllerDidNotifyAnEvent(adSlot: AdSlot?, event: VideoEvent?, data: String?) {
