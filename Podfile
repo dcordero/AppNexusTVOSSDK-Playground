@@ -4,6 +4,6 @@ platform :tvos, '11.0'
 use_frameworks!
 
 target 'AppNexusTVOSSDK-Example' do
-  pod 'AppNexusTVOSSDK', '~> 1.0.8'
+  pod 'AppNexusTVOSSDK', '~> 2.0.7'
 end
 
