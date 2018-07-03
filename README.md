@@ -4,7 +4,7 @@ This repo contains the result of testing the usage of the framework AppNexusTVOS
 
 ### Notes [v2.0.7](https://github.com/dcordero/AppNexusTVOSSDK-Playground/releases/tag/v2.0.7)
 - The framework does not load any Ad, and it prints the following [error logs](error_v2_0_7.log)
-- There is a typo in the log `"appnexus vmap parser initalized"` should be `""appnexus vmap parser initialized"`
+- There is a typo in the log `"appnexus vmap parser initalized"` should be `"appnexus vmap parser initialized"`
 - The following methods are documented as optionals but they are not actually declared as @optional in AdControllerProtocol, so they are actually required: 
 
 ```
