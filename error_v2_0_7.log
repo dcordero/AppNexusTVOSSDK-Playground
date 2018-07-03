@@ -1,0 +1,58 @@
+objc[81853]: Class _TVAnimatedImageView is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TVContentPartnerKitUI.framework/TVContentPartnerKitUI (0x11d224ed8) and /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TVKit.framework/TVKit (0x11cd935f8). One of the two will be used. Which one is undefined.
+2018-07-03 13:18:28.379718+0200 AppNexusTVOSSDK-Example[81853:4429978] [MC] System group container for systemgroup.com.apple.configurationprofiles path is /Users/dcordero/Library/Developer/CoreSimulator/Devices/ED3FAAD1-9794-453B-87F1-5112788F9706/data/Containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles
+2018-07-03 13:18:28.380859+0200 AppNexusTVOSSDK-Example[81853:4429978] [MC] Reading from private effective user settings.
+2018-07-03 13:18:28.436439+0200 AppNexusTVOSSDK-Example[81853:4429978] [ANTVSDK] load URL: (
+    "https://ib.adnxs.com/vmap?pset_id=8"
+)
+2018-07-03 13:18:28.734210+0200 AppNexusTVOSSDK-Example[81853:4430167] TIC Read Status [2:0x0]: 1:57
+2018-07-03 13:18:28.734449+0200 AppNexusTVOSSDK-Example[81853:4430167] TIC Read Status [2:0x0]: 1:57
+2018-07-03 13:18:28.736401+0200 AppNexusTVOSSDK-Example[81853:4430043] [ANTVSDK] responseString = (
+    "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><vmap:VMAP xmlns:vmap=\"http://www.iab.net/videosuite/vmap\" version=\"1.0\"></vmap:VMAP>"
+)
+2018-07-03 13:18:28.908128+0200 AppNexusTVOSSDK-Example[81853:4430164] Task <11FBC213-7203-4C03-976D-0C4D97CC0F5C>.<1> finished with error - code: -999
+2018-07-03 13:18:28.944371+0200 AppNexusTVOSSDK-Example[81853:4430164] Task <8F41FEE2-B5A1-4918-A20F-F249F3F3EFC7>.<2> finished with error - code: -999
+2018-07-03 13:18:29.066420+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "appnexus vmap parser initalized"
+)
+2018-07-03 13:18:29.067587+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "vmapParser is being called over JS Bridge"
+)
+2018-07-03 13:18:29.071067+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "[APN-always][13:18:29.70],UserAgentParser,Version 0.0.1"
+)
+2018-07-03 13:18:29.077685+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "[APN-always][13:18:29.77],VMAP Parser:,Version 1.0.1"
+)
+2018-07-03 13:18:29.079792+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "callback cbHandlingParsedVAST is called"
+)
+2018-07-03 13:18:29.092076+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] (
+    "The data couldn\U2019t be read because it isn\U2019t in the correct format."
+)
+2018-07-03 13:18:29.092346+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "APNVideo_VmapParser get called and wait callback"
+)
+2018-07-03 13:18:29.092710+0200 AppNexusTVOSSDK-Example[81853:4430169] [ANTVSDK] vmapParser invoked in js bridging
+2018-07-03 13:18:29.092746+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "vmapParser is being called over JS Bridge"
+)
+2018-07-03 13:18:29.094930+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "[APN-always][13:18:29.94],VMAP Parser:,Version 1.0.1"
+)
+2018-07-03 13:18:29.097149+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "callback cbHandlingParsedVAST is called"
+)
+2018-07-03 13:18:29.098282+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] (
+    "The data couldn\U2019t be read because it isn\U2019t in the correct format."
+)
+2018-07-03 13:18:29.099920+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] (
+    "Empty or Invalid Response From Ad Server"
+)
+2018-07-03 13:18:29.105860+0200 AppNexusTVOSSDK-Example[81853:4430161] [ANTVSDK] [Script Bridge]: (
+    "APNVideo_VmapParser get called and wait callback"
+)
+2018-07-03 13:18:29.106216+0200 AppNexusTVOSSDK-Example[81853:4430169] [ANTVSDK] vmapParser invoked in js bridging
+2018-07-03 13:18:29.288725+0200 AppNexusTVOSSDK-Example[81853:4430169] Task <13F8713E-88A0-42B9-96D1-F0014765A507>.<3> finished with error - code: -999
+2018-07-03 13:18:30.019965+0200 AppNexusTVOSSDK-Example[81853:4430162] Task <2486F970-A197-427D-BF6D-D8A90D95CAEE>.<4> finished with error - code: -999
+Fatal Error
+

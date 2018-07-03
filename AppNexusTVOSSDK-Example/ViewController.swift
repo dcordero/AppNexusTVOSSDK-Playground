@@ -5,12 +5,12 @@ import ANTVSDK
 
 private let appNexusPsetId = 8
 
-class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
+class ViewController: UIViewController, AdControllerProtocol {
 
     private var playerContainerView: UIView!
 
     private var playerViewController: AVPlayerViewController!
-    private var adPlaybackController: VMAPPlaybackController!
+    private var adController: AdController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +27,31 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
         presentDummyModalViewController()
     }
     
-    // MARK: - VMAPPlaybackControllerProtocol
-    
-    func adPlaybackControllerDidPrepare(result: Bool) {
-        if result {
-            adPlaybackController?.play()
+    // MARK: - AdControllerProtocol
+
+    func adPlaybackControllerDidSetup(adSlots: Array<AdSlot>?) {
+        if adSlots != nil {
+            adController.play()
         }
+        else {
+            print("Fatal Error");
+        }
+    }
+
+    func adPlaybackControllerDidRaiseAnError(adSlot: AdSlot?, result: ANTVErrorProtocol?) {
+
+    }
+
+    func adPlaybackControllerDidNotifyAnEvent(adSlot: AdSlot?, event: VideoEvent?, data: String?) {
+
+    }
+
+    func adPlaybackControllerDidNotifyAdSlotEnded(adSlot: AdSlot?) {
+
+    }
+
+    func adPlaybackControllerShouldStartAd(adSlot: AdSlot?) -> Bool {
+        return true
     }
         
     // MARK: - Private
@@ -52,16 +71,16 @@ class ViewController: UIViewController, VMAPPlaybackControllerProtocol {
     }
     
     private func setUpAppNexusSDK() {
-        adPlaybackController = VMAPPlaybackController()
+        adController = AdController()
         
         // This property allows skiping the Ad with a click in touch area of SiriRemote.
         // adPlaybackController.isSkippable = true
         
-        adPlaybackController.setup(appNexusPsetId: appNexusPsetId,
-                                   contentVideoPlayerViewController: playerViewController,
-                                   contentVideoPlayer: playerViewController.player!,
-                                   contentUIViewController: self,
-                                   delegate: self)
+        adController.setup(appNexusPsetId: appNexusPsetId,
+                           contentVideoPlayerViewController: playerViewController,
+                           contentVideoPlayer: playerViewController.player!,
+                           contentUIViewController: self,
+                           delegate: self)
     }
     
     private func setUpStreamToPlay(url: URL) {
