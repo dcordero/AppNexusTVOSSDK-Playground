@@ -3,8 +3,6 @@ import AVFoundation
 import UIKit
 import ANTVSDK
 
-private let appNexusPsetId = 8
-
 class ViewController: UIViewController, AdControllerProtocol {
 
     private var playerContainerView: UIView!
@@ -75,7 +73,7 @@ class ViewController: UIViewController, AdControllerProtocol {
         // This property allows skiping the Ad with a click in touch area of SiriRemote.
         // adPlaybackController.isSkippable = true
         
-        adController.setup(appNexusPsetId: appNexusPsetId,
+        adController.setup(vastUrl: "SETUP VAST URL HERE",
                            contentVideoPlayerViewController: playerViewController,
                            contentVideoPlayer: playerViewController.player!,
                            contentUIViewController: self,
