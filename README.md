@@ -24,7 +24,7 @@ func adPlaybackControllerDidNotifyAdSlotEnded(adSlot: AdSlot?)
 - There is no method to pause. So when presenting another player for a different content, the Ad can still be listened on the background while the new content is played.
 - To check, how is the framework managing the changes in the rate of the bound AVPlayer? what happens when having a KVO to "rate" keeping track of the player status?
 
-### Crashes:
+#### Crashes:
 1. When the playing stream finishes the framework crashes. [Crash logs](crash1.log)
 2. Random crash when playing live streams. [Crash logs](crash2.log)
 
