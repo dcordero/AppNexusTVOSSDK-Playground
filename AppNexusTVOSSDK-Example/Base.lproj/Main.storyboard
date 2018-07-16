@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="640-WE-jOH">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View Controller-->
+        <scene sceneID="I9u-SD-IKN">
+            <objects>
+                <viewController id="640-WE-jOH" customClass="InitialViewController" customModule="AppNexusTVOSSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lbZ-es-CAw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ric-zQ-3ZZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xla-7b-Zbe">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6D-fu-uvo">
+                                <rect key="frame" x="878" y="497" width="165" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dNi-2K-NU9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRq-S6-xNe">
+                                <rect key="frame" x="358" y="663" width="1205" height="184"/>
+                                <string key="text">Press the button to start a player with AppNexusSDK integrated.
+
+Later, from the Player, you can press the key Menu to come back here, 
+and to verify that the player is not deallocated from memory.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="W6D-fu-uvo" firstAttribute="centerX" secondItem="AlH-qu-GUG" secondAttribute="centerX" id="0xw-Wd-JWQ"/>
+                            <constraint firstItem="W6D-fu-uvo" firstAttribute="centerY" secondItem="AlH-qu-GUG" secondAttribute="centerY" id="VqN-Af-E4L"/>
+                            <constraint firstItem="XRq-S6-xNe" firstAttribute="centerX" secondItem="AlH-qu-GUG" secondAttribute="centerX" id="XaR-vB-L6O"/>
+                            <constraint firstItem="XRq-S6-xNe" firstAttribute="top" secondItem="W6D-fu-uvo" secondAttribute="bottom" constant="80" id="mMx-cv-pip"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AlH-qu-GUG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hH2-UJ-1tZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2720" y="80"/>
+        </scene>
+        <!--Player View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlayerViewController" customModule="AppNexusTVOSSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +65,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRt-Fi-4ky">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6t-pQ-UOs">
+                                <rect key="frame" x="0.0" y="782" width="1920" height="298"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fru-yd-9Yz">
+                                        <rect key="frame" x="45" y="63" width="1830" height="92"/>
+                                        <string key="text">Hi there, I am an overlay view presented above the player. 
+For some reason, I am not gonna be visible when the Ads end... ¯\_(ツ)_/¯</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.80215669014084512" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fru-yd-9Yz" firstAttribute="top" secondItem="h6t-pQ-UOs" secondAttribute="top" constant="63" id="DGt-UA-SQu"/>
+                                    <constraint firstAttribute="height" constant="298" id="Doc-jO-ccR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fru-yd-9Yz" secondAttribute="trailing" constant="45" id="O5L-C6-b3l"/>
+                                    <constraint firstAttribute="bottom" secondItem="fru-yd-9Yz" secondAttribute="bottom" constant="143" id="Rp3-q3-mXA"/>
+                                    <constraint firstItem="fru-yd-9Yz" firstAttribute="leading" secondItem="h6t-pQ-UOs" secondAttribute="leading" constant="45" id="Yul-cB-FaI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CRt-Fi-4ky" secondAttribute="trailing" id="2co-9u-2y1"/>
+                            <constraint firstAttribute="bottom" secondItem="CRt-Fi-4ky" secondAttribute="bottom" id="3RD-8h-E0l"/>
+                            <constraint firstAttribute="trailing" secondItem="h6t-pQ-UOs" secondAttribute="trailing" id="B2w-Ne-cGz"/>
+                            <constraint firstItem="CRt-Fi-4ky" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jNS-iV-VSF"/>
+                            <constraint firstAttribute="bottom" secondItem="h6t-pQ-UOs" secondAttribute="bottom" id="mWT-TJ-0bb"/>
+                            <constraint firstItem="CRt-Fi-4ky" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="msj-f5-ib1"/>
+                            <constraint firstItem="h6t-pQ-UOs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tAb-8f-dQE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
+                    <connections>
+                        <outlet property="customOSDView" destination="h6t-pQ-UOs" id="5XW-Km-icl"/>
+                        <outlet property="playerContainerView" destination="CRt-Fi-4ky" id="dUF-q1-WQs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

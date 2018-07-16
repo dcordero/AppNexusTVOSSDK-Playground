@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		B4D6DD21325334F4E5E774D3 /* Pods_AppNexusTVOSSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */; };
 		FF3FC22A203EC695004140B7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF3FC229203EC695004140B7 /* README.md */; };
-		FF93E564204014650076A6D1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93E563204014650076A6D1 /* ModalViewController.swift */; };
 		FFA43647203EB8BD00382C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43646203EB8BD00382C0D /* AppDelegate.swift */; };
-		FFA43649203EB8BD00382C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43648203EB8BD00382C0D /* ViewController.swift */; };
+		FFA43649203EB8BD00382C0D /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA43648203EB8BD00382C0D /* PlayerViewController.swift */; };
 		FFA4364C203EB8BD00382C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA4364A203EB8BD00382C0D /* Main.storyboard */; };
 		FFA4364E203EB8BD00382C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA4364D203EB8BD00382C0D /* Assets.xcassets */; };
+		FFE17F7F20FC860A009475FE /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE17F7E20FC860A009475FE /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +21,13 @@
 		9B7CA6D9D30897A1238A836D /* Pods-AppNexusTVOSSDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppNexusTVOSSDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppNexusTVOSSDK-Example/Pods-AppNexusTVOSSDK-Example.release.xcconfig"; sourceTree = "<group>"; };
 		EA33365A74747A4BEF5D596A /* Pods_AppNexusTVOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppNexusTVOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3FC229203EC695004140B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FF93E563204014650076A6D1 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		FFA43643203EB8BD00382C0D /* AppNexusTVOSSDK-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppNexusTVOSSDK-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA43646203EB8BD00382C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFA43648203EB8BD00382C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFA43648203EB8BD00382C0D /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		FFA4364B203EB8BD00382C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFA4364D203EB8BD00382C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA4364F203EB8BD00382C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE17F7E20FC860A009475FE /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				FFA43646203EB8BD00382C0D /* AppDelegate.swift */,
-				FF93E563204014650076A6D1 /* ModalViewController.swift */,
-				FFA43648203EB8BD00382C0D /* ViewController.swift */,
+				FFE17F7E20FC860A009475FE /* InitialViewController.swift */,
+				FFA43648203EB8BD00382C0D /* PlayerViewController.swift */,
 				FFA4364A203EB8BD00382C0D /* Main.storyboard */,
 				FFA4364D203EB8BD00382C0D /* Assets.xcassets */,
 				FFA4364F203EB8BD00382C0D /* Info.plist */,
@@ -204,8 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA43649203EB8BD00382C0D /* ViewController.swift in Sources */,
-				FF93E564204014650076A6D1 /* ModalViewController.swift in Sources */,
+				FFE17F7F20FC860A009475FE /* InitialViewController.swift in Sources */,
+				FFA43649203EB8BD00382C0D /* PlayerViewController.swift in Sources */,
 				FFA43647203EB8BD00382C0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3QRL9KEQ4;
 				INFOPLIST_FILE = "AppNexusTVOSSDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dcordero.AppNexusTVOSSDK-Example";
@@ -352,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3QRL9KEQ4;
 				INFOPLIST_FILE = "AppNexusTVOSSDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dcordero.AppNexusTVOSSDK-Example";

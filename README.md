@@ -3,13 +3,15 @@
 This repo contains the result of testing the usage of the framework AppNexusTVOSSDK in playground mode...
 
 ### Notes [v2.0.7](https://github.com/dcordero/AppNexusTVOSSDK-Playground/releases/tag/v2.0.7)
-- The framework does not load any Ad, and it prints the following [error logs](error_v2_0_7.log)
+- The framework leaks memory, the player is never deallocated. Check in this playground project, the method `deinit` of PlayerViewController is never called when using AppNexusSDK
+- When the Ads end, any overlay view presented over the player is not longer visible. Checking the views hierarchy I can see that the view of AvPlayerViewController at the top when the Ads end.
+- When using a vastUrl, the framework does not load any Ad, and it prints the following [error logs](error_v2_0_7.log)
 - There is a typo in the log `"appnexus vmap parser initalized"` should be `"appnexus vmap parser initialized"`
-- The following methods are documented as optionals but they are not actually declared as @optional in AdControllerProtocol, so they are actually required: 
+- The following methods are documented as optionals but they are not actually declared as @optional in AdControllerProtocol, so they are actually required:
 
 ```
-func adPlaybackControllerDidRaiseAnError(adSlot: AdSlot?, result: ANTVErrorProtocol?) 
-func adPlaybackControllerDidNotifyAnEvent(adSlot: AdSlot?, event: VideoEvent?, data: String?) 
+func adPlaybackControllerDidRaiseAnError(adSlot: AdSlot?, result: ANTVErrorProtocol?)
+func adPlaybackControllerDidNotifyAnEvent(adSlot: AdSlot?, event: VideoEvent?, data: String?)
 func adPlaybackControllerDidNotifyAdSlotEnded(adSlot: AdSlot?)
 ```
 ### Notes [v1.0.8](https://github.com/dcordero/AppNexusTVOSSDK-Playground/releases/tag/v1.0.8)

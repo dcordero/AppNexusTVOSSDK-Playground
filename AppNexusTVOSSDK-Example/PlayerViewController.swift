@@ -3,10 +3,13 @@ import AVFoundation
 import UIKit
 import ANTVSDK
 
-class ViewController: UIViewController, AdControllerProtocol {
+private let appNexusPsetId = 34
 
-    private var playerContainerView: UIView!
+class PlayerViewController: UIViewController, AdControllerProtocol {
 
+    @IBOutlet weak var playerContainerView: UIView!
+    @IBOutlet weak var customOSDView: UIView!
+    
     private var playerViewController: AVPlayerViewController!
     private var adController: AdController!
     
@@ -19,9 +22,8 @@ class ViewController: UIViewController, AdControllerProtocol {
         setUpStreamToPlay(url: URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        presentDummyModalViewController()
+    deinit {
+        print("I am never executed. AppNexusSDK is creating a retain cycle somewhere")
     }
     
     // MARK: - AdControllerProtocol
@@ -44,7 +46,7 @@ class ViewController: UIViewController, AdControllerProtocol {
     }
 
     func adPlaybackControllerDidNotifyAdSlotEnded(adSlot: AdSlot?) {
-
+        dismiss(animated: true, completion: nil)
     }
 
     func adPlaybackControllerShouldStartAd(adSlot: AdSlot?) -> Bool {
@@ -54,12 +56,8 @@ class ViewController: UIViewController, AdControllerProtocol {
     // MARK: - Private
     
     private func setUpView() {
-        playerContainerView = UIView()
-        playerContainerView.frame = view.bounds
-
-        view.addSubview(playerContainerView)
-
         playerViewController = AVPlayerViewController()
+        playerViewController.playbackControlsIncludeTransportBar = false
         playerViewController.player = AVPlayer()
         
         addChildViewController(playerViewController)
@@ -73,7 +71,7 @@ class ViewController: UIViewController, AdControllerProtocol {
         // This property allows skiping the Ad with a click in touch area of SiriRemote.
         // adPlaybackController.isSkippable = true
         
-        adController.setup(vastUrl: "SETUP VAST URL HERE",
+        adController.setup(appNexusPsetId: 34,
                            contentVideoPlayerViewController: playerViewController,
                            contentVideoPlayer: playerViewController.player!,
                            contentUIViewController: self,
@@ -84,11 +82,5 @@ class ViewController: UIViewController, AdControllerProtocol {
         let asset = AVURLAsset(url: url, options: nil)
         let playerItem = AVPlayerItem(asset: asset, automaticallyLoadedAssetKeys: nil)
         playerViewController?.player?.replaceCurrentItem(with: playerItem)
-    }
-    
-    private func presentDummyModalViewController() {
-        let modalViewController = ModalViewController()
-        modalViewController.modalPresentationStyle = .blurOverFullScreen
-        present(modalViewController, animated: true, completion: nil)
     }
 }
